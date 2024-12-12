@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   background-color: black;
   height: 100vh;
+  font-family: monospace;
 }
 
 .calcada {
@@ -20,8 +21,38 @@ body {
 
 /* CSS Controles */
 .controles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   height: 100px;
   background: #222;
+  padding: 10px;
+}
+
+.controles .mostrador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #22f522;
+  border: 10px solid #555;
+  height: 100%;
+  width: 200px;
+  border-radius: 8px;
+  font-size: 2.5rem;
+}
+
+.controles button {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-size: 2rem;
+  border: 6px solid #999;
+  cursor: pointer;
+}
+
+.controles button.destaque {
+  border-color: yellow;
 }
 
 /* CSS Rua */
