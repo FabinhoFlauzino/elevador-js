@@ -1,16 +1,18 @@
 /* CSS Gerais */
+
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  height: 100vh;
-  font-family: "VT323", monospace;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    font-family: 'VT323', monospace;
 }
 
 .calcada {
@@ -25,63 +27,67 @@ body {
   padding-top: 10px;
 }
 
-/* CSS Controles */
+/* CSS dos controles */
+
 .controles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  height: 100px;
-  background: #222;
-  padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+    background-color: #222;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .controles .mostrador {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #22f522;
-  border: 10px solid #555;
-  height: 100%;
-  width: 200px;
-  border-radius: 8px;
-  font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22F522;
+    border: 10px solid #666;
+    height: 100%;
+    width: 200px;
+    border-radius: 8px;
+    font-size: 2.5rem;
 }
 
 .controles button {
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  font-size: 2rem;
-  border: 6px solid #999;
-  cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: 6px solid #999;
+    cursor: pointer;
 }
 
 .controles button.destaque {
-  border-color: yellow;
+    border-color: yellow;
 }
 
-/* CSS Rua */
+/* CSS rua */
+
 .rua {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  height: 100px;
-  background-color: #777;
-  border-top: 10px solid white;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #777;
+    gap: 30px;
+    border-top: 10px solid white;
 }
 
 .rua>.faixa {
-  flex: 1;
-  height: 10px;
-  background-color: #ddd;
+    flex: 1;
+    height: 10px;
+    background-color: #DDD;
 }
 
-/* CSS Arvore */
+/* CSS árvore */
+
 .arvore {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .arvore::before {
@@ -93,108 +99,106 @@ body {
 }
 
 .arvore::after {
-  content: "";
-  width: 30px;
-  height: 100px;
-  background-color: #4d3131;
+    content: "";
+    width: 20px;
+    height: 100px;
+    background-color: #4d3131;
 }
 
 /* CSS Prédio */
+
 .predio {
-  display: flex;
-  gap: 10px;
-  width: 500px;
-  height: 100%;
-  background-color: #319da0;
+    display: flex;
+    width: 500px;
+    height: 100%;
+    background-color: #319DA0;
+    gap: 10px;
 }
 
 .coluna {
-  display: flex;
-  flex-direction: column;
-  background-color: #0006;
-  flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #0006;
+    flex: 2;
 }
 
 .andar {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  border-bottom: 2px solid white;
-  flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    border-bottom: 2px solid white;
 }
 
 .porta {
-  background-color: brown;
-  padding: 5%;
-  width: 35%;
-  height: 80%;
-  border: 4px solid #fff6;
-  border-bottom-width: 0;
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    width: 40%;
+    height: 80%;
+    background-color: brown;
+    border: solid 5px #FFF6;
+    border-bottom-width: 0;
 }
 
 .porta::after {
-  content: "";
-  width: 20%;
-  height: 10%;
-  background-color: #fff9;
-  position: absolute;
-  border-radius: 4px;
+    content: "";
+    width: 30%;
+    height: 15%;
+    border-radius: 5px;
+    background-color: #FFF9;
 }
 
 .terreo {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-bottom: 2px solid transparent;
 }
 
 .janela {
-  position: relative;
-  background-color: #068888;
-  border: 5px solid #fffc;
-  height: 50%;
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #FFFC;
+    background-color: #068888;
+    height: 50%;
+    width: 40%;
 }
 
 .janela::after {
-  content: "";
-  position: absolute;
-  border: 1px solid #fffc;
-  top: 0;
-  height: 100%;
-  width: 1px;
+    content: "";
+    position: absolute;
+    border: 1px solid #FFFC;
+    top: 0;
+    height: 100%;
+    width: 1px;
 }
 
 .janela::before {
-  content: "";
-  position: absolute;
-  border: 1px solid #fffc;
-  left: 0;
-  height: 1px;
-  width: 100%;
+    content: "";
+    position: absolute;
+    border: 1px solid #FFFC;
+    left: 0;
+    width: 100%;
+    height: 1px;
 }
 
 .poco {
-  display: flex;
-  justify-content: center;
-  background-color: #fff9;
-  flex: 1;
-  position: relative;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #fff9;
+    flex: 1;
 }
 
 .elevador {
-  border: 3px solid #000;
-  border-top-width: 10px;
-  background-color: #fffa;
-  width: 80%;
-  position: absolute;
-  bottom: 0;
+    position: absolute;
+    border: 3px solid black;
+    border-top-width: 10px;
+    background-color: #FFFA;
+    width: 80%;
+    bottom: 0;
 }
